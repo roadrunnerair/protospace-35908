@@ -12,7 +12,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @comments = current_user.comments
     @user = User.find(params[:id])
     @prototypes = Prototype.all
   end
